@@ -28,6 +28,6 @@ Problem URL:
 https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/
 
 Submission Date:
-2026-08-05 14:49:35
+2026-08-05 15:04:42
 
 Generated automatically by LeetSync.
