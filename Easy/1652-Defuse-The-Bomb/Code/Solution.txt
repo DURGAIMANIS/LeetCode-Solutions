@@ -1,0 +1,14 @@
+            for(int j=i-1;j>=i+k;j--){
+                tot += code[(j + code.length) % code.length];
+            }
+            arr[i]=tot;
+            int tot=0;
+            for(int i=0;i<code.length;i++){
+        }else{
+         }
+         }
+        }
+        return arr;
+    }
+}
+            arr[i]=tot;
