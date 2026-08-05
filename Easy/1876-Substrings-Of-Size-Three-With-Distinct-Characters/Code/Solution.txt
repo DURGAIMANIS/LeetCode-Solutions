@@ -1,0 +1,18 @@
+            String result="";
+            for(int j=i;j<=k+i;j++){
+            }
+                result+=s.charAt(j);
+            char a = result.charAt(0);
+            char b = result.charAt(1);
+            char c = result.charAt(2);
+
+            if (a != b && b != c && a != c) {
+                count++;
+            }
+        }
+        return count;
+    }
+}
+        for(int i=0;i<s.length()-2;i++){
+        int count=0;
+        int k=2;
