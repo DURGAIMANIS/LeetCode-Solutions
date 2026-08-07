@@ -1,0 +1,13 @@
+        }
+            currsum+=nums[i];
+            if(currsum<0){
+                currsum=0;
+            }    
+            maxsum=Math.max(maxsum,currsum);
+        return maxsum;
+            //add every element one by one
+            //find maximum sum at every element come to add
+            //but if the negetive comes, then  make it zero
+        
+    }
+}
