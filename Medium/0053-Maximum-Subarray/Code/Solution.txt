@@ -1,13 +1,18 @@
-        }
+            //add every element one by one
             currsum+=nums[i];
+            //find maximum sum at every element come to add
+            maxsum=Math.max(maxsum,currsum);
+            //but if the negetive comes, then  make it zero
             if(currsum<0){
                 currsum=0;
             }    
-            maxsum=Math.max(maxsum,currsum);
+        }
         return maxsum;
-            //add every element one by one
-            //find maximum sum at every element come to add
-            //but if the negetive comes, then  make it zero
+        for(int i=0;i<nums.length;i++){
+        //i need to find maxsum 
+
+        int maxsum=nums[0];
         
     }
-}
+
+        //Keep adding elements. If the current sum becomes worse than starting fresh, start a new subarray.
