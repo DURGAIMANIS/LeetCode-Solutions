@@ -21,14 +21,16 @@ Language: 1class Solution {
 15            }    
 16        }
 17        return maxsum;
-18        
-19    }
-20}
+18
+19        //Keep adding elements. If the current sum becomes worse than starting fresh, start a new subarray.
+20        
+21    }
+22}
 
 Problem URL:
 https://leetcode.com/problems/maximum-subarray/
 
 Submission Date:
-2026-08-07 17:09:32
+2026-08-10 06:34:09
 
 Generated automatically by LeetSync.
