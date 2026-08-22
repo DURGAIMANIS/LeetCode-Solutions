@@ -9,5 +9,9 @@
                 left++;
             }
         return new int[]{};
+        int right=numbers.length-1;//5-4 =4 
     }
 }
+        int left=0;
+        //no need to use extra space
+        //array is sorted
