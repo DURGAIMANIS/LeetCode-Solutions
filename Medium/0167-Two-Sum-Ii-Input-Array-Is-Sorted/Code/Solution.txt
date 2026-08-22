@@ -8,6 +8,8 @@
             }else{
                 left++;
             }
+        int right=numbers.length-1;//5-4 =4 
+        int left=0;
         return new int[]{};
     }
 }
