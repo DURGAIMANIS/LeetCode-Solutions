@@ -12,8 +12,8 @@ Language: 1class Solution {
 6        for(int i=0;i<nums.length-2;i++){
 7            if(i>0&&nums[i]==nums[i-1]) continue;//[1 1 1 3 4 6];
 8
-9            int j=i+1;
-10            int k=nums.length-1;
+9            int j=i+1;//next value after i
+10            int k=nums.length-1;//value of last array 
 11
 12            while(j<k){
 13                int sum=nums[i]+nums[j]+nums[k];
@@ -42,6 +42,6 @@ Problem URL:
 https://leetcode.com/problems/3sum/
 
 Submission Date:
-2026-08-22 13:11:55
+2026-08-22 13:13:46
 
 Generated automatically by LeetSync.
