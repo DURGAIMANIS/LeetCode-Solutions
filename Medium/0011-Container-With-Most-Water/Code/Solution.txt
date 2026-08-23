@@ -1,5 +1,3 @@
-        int maxarea=0;
-        while(left<right){
 
         }
             int h=Math.min(height[left],height[right]);//min decide how much store the water
@@ -10,8 +8,6 @@
 
             if(height[left]<height[right]) left++;
             else right--;
-
-        int right=height.length-1;
-        int left=0;
-    public int maxArea(int[] height) {
-class Solution {
+        return maxarea;
+    }
+}
