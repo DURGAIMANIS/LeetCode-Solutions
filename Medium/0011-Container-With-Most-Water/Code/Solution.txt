@@ -1,18 +1,17 @@
-            //it store the water in reactangular box,so we need lenght*base;
-            int length=Math.min(height[left],height[right]);
-            int base=right-left; //8-0 =8
-            int area=length*base;
-            maxArea=Math.max(maxArea,area);
-
-            if(height[left]<=height[right]) left++;//i need max water, so we need to hold greater value always
-            else right--;
-        }
-
-        return maxArea;
-    }
+        int maxarea=0;
         while(left<right){
 
-        int maxArea=0;
+        }
+            int h=Math.min(height[left],height[right]);//min decide how much store the water
+            int b=right-left; //right>left
+
+            int area=h*b;
+            maxarea=Math.max(maxarea,area);
+
+            if(height[left]<height[right]) left++;
+            else right--;
 
         int right=height.length-1;
         int left=0;
+    public int maxArea(int[] height) {
+class Solution {
