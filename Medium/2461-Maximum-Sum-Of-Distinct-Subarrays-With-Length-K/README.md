@@ -28,6 +28,6 @@ Problem URL:
 https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/
 
 Submission Date:
-2026-08-23 09:23:36
+2026-08-23 09:27:20
 
 Generated automatically by LeetSync.
