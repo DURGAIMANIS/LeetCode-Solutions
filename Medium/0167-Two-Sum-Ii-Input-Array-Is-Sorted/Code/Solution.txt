@@ -1,15 +1,16 @@
+        int left=0;
+        int right=numbers.length-1;//5-4 =4 
         while(left<right){
             //don't use <= because we need two diff number
-        }
-            if((numbers[left]+numbers[right]) == target){
+            if(sum == target){
                 return new int[]{left+1,right+1};
-            }else if((numbers[left]+numbers[right])>target){
+            }else if(sum>target){
                 right--;
             }else{
                 left++;
             }
-        int right=numbers.length-1;//5-4 =4 
-        int left=0;
+        }
         return new int[]{};
     }
+            int sum=(numbers[left]+numbers[right]) ;
 }
