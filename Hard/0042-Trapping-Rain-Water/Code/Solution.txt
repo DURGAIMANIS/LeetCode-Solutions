@@ -1,0 +1,13 @@
+            if(leftmax<rightmax){
+                left++;
+                leftmax=Math.max(leftmax,height[left]);
+                water+=leftmax - height[left];
+            }else{
+                right--;
+                rightmax=Math.max(rightmax,height[right]);
+                water+=rightmax- height[right];
+            }
+        }
+        return water;
+    }
+}
