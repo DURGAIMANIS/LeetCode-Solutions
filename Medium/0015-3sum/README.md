@@ -20,11 +20,11 @@ Language: 1class Solution {
 14
 15                if(sum==0){
 16                    res.add(Arrays.asList(nums[i],nums[j],nums[k]));
-17                    while(j<k&&nums[j]==nums[j+1]) j++;
-18                    while(j<k&&nums[k]==nums[k-1]) k--;
+17                    while(j<k && nums[j]==nums[j+1]) j++;
+18                    while(j<k && nums[k]==nums[k-1]) k--;
 19
-20                    j++;
-21                    k--;
+20                    j++;//for no repeat same element for j
+21                    k--;//for no repeat same element for k
 22                }
 23                else if(sum>0){
 24                    k--;
@@ -42,6 +42,6 @@ Problem URL:
 https://leetcode.com/problems/3sum/
 
 Submission Date:
-2026-08-22 13:15:30
+2026-08-23 05:19:54
 
 Generated automatically by LeetSync.
