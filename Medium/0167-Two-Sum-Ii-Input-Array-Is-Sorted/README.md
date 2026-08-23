@@ -13,22 +13,23 @@ Language: 1class Solution {
 7        int right=numbers.length-1;//5-4 =4 
 8        while(left<right){
 9            //don't use <= because we need two diff number
-10            if((numbers[left]+numbers[right]) == target){
-11                return new int[]{left+1,right+1};
-12            }else if((numbers[left]+numbers[right])>target){
-13                right--;
-14            }else{
-15                left++;
-16            }
-17        }
-18        return new int[]{};
-19    }
-20}
+10            int sum=(numbers[left]+numbers[right]) ;
+11            if(sum == target){
+12                return new int[]{left+1,right+1};
+13            }else if(sum>target){
+14                right--;
+15            }else{
+16                left++;
+17            }
+18        }
+19        return new int[]{};
+20    }
+21}
 
 Problem URL:
 https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 
 Submission Date:
-2026-08-22 12:43:39
+2026-08-23 05:16:00
 
 Generated automatically by LeetSync.
