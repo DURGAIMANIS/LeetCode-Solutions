@@ -1,8 +1,8 @@
-                    while(j<k&&nums[j]==nums[j+1]) j++;
-                    while(j<k&&nums[k]==nums[k-1]) k--;
+                    while(j<k && nums[j]==nums[j+1]) j++;
+                    while(j<k && nums[k]==nums[k-1]) k--;
 
-                    j++;
-                    k--;
+                    j++;//for no repeat same element for j
+                    k--;//for no repeat same element for k
                 }
                 else if(sum>0){
                     k--;
