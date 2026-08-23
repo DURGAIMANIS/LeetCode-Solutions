@@ -1,0 +1,18 @@
+
+        int left=0;
+        int right=nums.length;
+
+        while(left<right){
+            if(nums[left]==1){
+            }else{
+
+        int count=0;
+                count++;
+                maxcount=Math.max(maxcount,count);
+                left++;
+                count=0;
+            }
+        int maxcount=0;
+        }
+        return maxcount;
+                left++;
