@@ -1,18 +1,17 @@
-
-            if (right - left + 1 == k) {
-                maxSum = Math.max(maxSum, sum);
-
-                set.remove(nums[left]);
-                sum -= nums[left];
-                left++;
-            sum += nums[right];
-            set.add(nums[right]);
-
-            }
-                sum -= nums[left];
                 left++;
                 set.remove(nums[left]);
-            }
-        }
+                sum -= nums[left];
 
-        return maxSum;
+            while (set.contains(nums[right])) {
+
+        for (int right = 0; right < n; right++) {
+        int left = 0;
+
+        long maxSum = 0;
+        long sum = 0;
+
+        HashSet<Integer> set = new HashSet<>();
+
+        int n = nums.length;
+    public long maximumSubarraySum(int[] nums, int k) {
+class Solution {
