@@ -1,0 +1,17 @@
+            char ch = s.charAt(windowEnd);
+
+        while(windowEnd<N){
+        int N = s.length();
+        int minLen = Integer.MAX_VALUE;
+        int windowEnd=0;
+        int windowStart=0;
+        int uniqueCharCount=freqMap.size();
+        int startIndex=-1;
+            freqMap.put(ch,freqMap.getOrDefault(ch,0)+1);
+        }
+            char ch = t.charAt(i);
+
+        for(int i=0;i<t.length();i++){
+        HashMap<Character,Integer> freqMap = new HashMap<>();
+    public String minWindow(String s, String t) {
+class Solution {
