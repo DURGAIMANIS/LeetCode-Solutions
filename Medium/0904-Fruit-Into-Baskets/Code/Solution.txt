@@ -1,18 +1,17 @@
+                currmax++;
+            }else{
+                currmax=lastcount+1;
             }
 
             if(fruit==lastfruit){
                 lastcount++;
             }else{
                 lastcount=1;
-                currmax=lastcount+1;
-            }else{
-                currmax++;
-            if(fruit==lastfruit||fruit==secondlastfruit){
-            int fruit=fruits[i];
-            
-        for(int i=0;i<n;i++){
-        int lastcount=0;
-
                 secondlastfruit=lastfruit;
                 lastfruit=fruit;
             }
+            max=Math.max(max,currmax);
+        }
+        return max;
+    }
+}
