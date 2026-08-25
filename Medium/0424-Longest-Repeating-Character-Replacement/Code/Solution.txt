@@ -1,0 +1,18 @@
+                    replaced++;
+                } else if (s.charAt(i) == c) {
+                    i++;
+                } else {
+                    j++;
+                } else if (replaced < k) {
+                    j++;
+                if (s.charAt(j) == c) {
+            while (j < n) {
+                    i++;
+                    replaced--;
+                }
+                ans = Math.max(ans, j - i);
+            }
+            int replaced = 0;
+        }
+        return ans;
+    }
