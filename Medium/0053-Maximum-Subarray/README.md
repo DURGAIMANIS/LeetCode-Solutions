@@ -24,13 +24,14 @@ Language: 1class Solution {
 18
 19        //Keep adding elements. If the current sum becomes worse than starting fresh, start a new subarray.
 20        
-21    }
-22}
+21
+22    }
+23}
 
 Problem URL:
 https://leetcode.com/problems/maximum-subarray/
 
 Submission Date:
-2026-08-10 06:37:21
+2026-08-31 17:42:23
 
 Generated automatically by LeetSync.
