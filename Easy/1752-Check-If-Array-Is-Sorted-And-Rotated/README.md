@@ -17,6 +17,6 @@ Problem URL:
 https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
 
 Submission Date:
-2026-08-31 17:09:43
+2026-08-31 17:22:07
 
 Generated automatically by LeetSync.
