@@ -1,0 +1,18 @@
+            char ch1=Character.toLowerCase(s.charAt(left));
+            char ch2=Character.toLowerCase(s.charAt(right));
+            }
+            if(ch1!=ch2){
+                continue;
+                right--;
+
+            if(!Character.isLetterOrDigit(s.charAt(right))){
+            }
+                continue;
+                return false;
+            }
+
+            left++;
+            right--;
+        }
+       return true;
+    }
