@@ -9,29 +9,27 @@ Language: 1class Solution {
 3        int max=nums[0];
 4        int min=nums[0];
 5        int answer=nums[0];
-6
-7        for(int i=1;i<nums.length;i++){
-8            if(nums[i]<0){
-9                int temp=max;
-10                max=min;
-11                min=temp;
-12            }
-13
-14            max=Math.max(nums[i],max*nums[i]);
-15            min=Math.min(nums[i],min*nums[i]);
-16
-17            answer=Math.max(answer,max);
-18        }
-19        return answer;
-20
-21    }
-22}
-23
+6        for(int i=1;i<nums.length;i++){
+7            if(nums[i]<0){
+8                int temp=max;
+9                max=min;
+10                min=temp;
+11            }
+12
+13            max=Math.max(nums[i],max*nums[i]);
+14            min=Math.min(nums[i],min*nums[i]);
+15            answer=Math.max(answer,max);
+16        }
+17        return answer;
+18
+19    }
+20}
+21
 
 Problem URL:
 https://leetcode.com/problems/maximum-product-subarray/
 
 Submission Date:
-2026-09-01 03:24:09
+2026-09-01 03:25:56
 
 Generated automatically by LeetSync.
