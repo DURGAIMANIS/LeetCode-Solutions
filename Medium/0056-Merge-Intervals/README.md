@@ -4,39 +4,41 @@ Problem Number: 56
 
 Difficulty: Medium
 
-Language: 1import java.util.*;
-2
-3class Solution {
-4    public int[][] merge(int[][] intervals) {
-5        if (intervals.length <= 1) return intervals;
-6
-7        // Sort intervals by start time
-8        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
-9
-10        List<int[]> merged = new ArrayList<>();
-11        int[] current = intervals[0];
-12
-13        for (int i = 1; i < intervals.length; i++) {
-14            if (intervals[i][0] <= current[1]) {
-15                // Overlap, merge intervals
-16                current[1] = Math.max(current[1], intervals[i][1]);
-17            } else {
-18                // No overlap, add current interval to list
-19                merged.add(current);
-20                current = intervals[i];
-21            }
-22        }
-23        // Add the last interval
-24        merged.add(current);
-25
-26        return merged.toArray(new int[merged.size()][]);
-27    }
-28}
+Language: /*
+
+    Time Complexity : O(NlogN), Sorting the array(intervals) costs O(NlogN). Where N is the size of
+    the Vector(intervals).
+
+    Space Complexity : O(1), Constant Space. Extra space is only allocated for the Vector(output)
+    which can go upto size N , however the output does not count towards the space complexity.
+
+    Solved using Array + Sorting.
+
+*/
+
+class Solution {
+public:
+    vector<vector<int>> merge(vector<vector<int>>& intervals) {
+        int n = intervals.size();
+        sort(intervals.begin(), intervals.end());
+        vector<vector<int>> output;
+        for(auto interval : intervals){
+            if(output.empty() || output.back()[1] < interval[0]){
+                output.push_back(interval);
+            }
+            else{
+                output.back()[1] = max(output.back()[1], interval[1]);
+            }
+        }
+        return output;
+    }
+};
+
 
 Problem URL:
 https://leetcode.com/problems/merge-intervals/
 
 Submission Date:
-2026-09-02 03:30:19
+2026-09-02 04:32:13
 
 Generated automatically by LeetSync.
