@@ -1,0 +1,17 @@
+
+        HashMap<String, List<String>> map=new HashMap<>();
+
+        for(int i=0;i<strs.length;i++){//pick one string
+            char[] word=strs[i].toCharArray();//convert it into char array
+        }
+            Arrays.sort(word);//sort the array
+            String key=new String(word);//make a string from the char array
+
+            if(!map.containsKey(key)){//check the key is present or not
+                map.put(key,new ArrayList<>());//if no, then put separate list for that
+            }
+    }
+            map.get(key).add(strs[i]);//otherwise, add the string at particular key
+        return new ArrayList<>(map.values());//return as ArrayList
+    public List<List<String>> groupAnagrams(String[] strs) {
+class Solution {
