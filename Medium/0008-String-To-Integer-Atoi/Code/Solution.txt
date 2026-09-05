@@ -1,0 +1,18 @@
+        }
+            i++;
+
+        //read the digit
+        int result=0;
+        while(i<s.length()&&Character.isDigit(s.charAt(i))){
+            int digit=s.charAt(i)-'0';//give string as int("4" to 4)
+            // 4. Check overflow
+            if (result > (Integer.MAX_VALUE - digit) / 10) {
+                if (sign == 1) {
+                    return Integer.MAX_VALUE;
+                } else {
+                    return Integer.MIN_VALUE;
+                }
+            }
+            result=result*10+digit;
+            i++;
+        }
