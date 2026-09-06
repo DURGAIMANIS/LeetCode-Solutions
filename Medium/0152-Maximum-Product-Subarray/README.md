@@ -30,6 +30,6 @@ Problem URL:
 https://leetcode.com/problems/maximum-product-subarray/
 
 Submission Date:
-2026-09-01 03:25:56
+2026-09-06 12:38:05
 
 Generated automatically by LeetSync.
