@@ -4,38 +4,45 @@ Problem Number: 31
 
 Difficulty: Medium
 
-Language: #include <vector>
-#include <algorithm>
-using namespace std;
-
-class Solution {
-public:
-    void nextPermutation(vector<int>& nums) {
-        int n = nums.size(), i = n - 2;
-        
-        // Step 1: Find the breakpoint
-        while (i >= 0 && nums[i] >= nums[i + 1]) {
-            i--;
-        }
-        
-        if (i >= 0) {
-            // Step 2: Find the smallest element larger than nums[i]
-            int j = n - 1;
-            while (nums[j] <= nums[i]) {
-                j--;
-            }
-            swap(nums[i], nums[j]);
-        }
-        
-        // Step 3: Reverse the subarray to the right of i
-        reverse(nums.begin() + i + 1, nums.end());
-    }
-};
+Language: 1class Solution {
+2    public void nextPermutation(int[] nums) {
+3        int n=nums.length;
+4
+5        int i=n-2;
+6
+7        while(i>=0&&nums[i]>=nums[i+1]){//find small value
+8            i--;
+9        }
+10
+11    if (i >= 0) {
+12        int j=n-1;
+13        while(nums[j]<=nums[i]){
+14            j--;
+15        }
+16        int temp=nums[i];
+17        nums[i]=nums[j];
+18        nums[j]=temp;
+19    }
+20        reverse(nums,i+1,n-1);
+21
+22    }
+23
+24    public void reverse(int[] nums,int i,int j){
+25        while(i<j){
+26            int temp=nums[i];
+27            nums[i]=nums[j];
+28            nums[j]=temp;
+29            i++;
+30            j--;
+31        }
+32
+33    }
+34}
 
 Problem URL:
 https://leetcode.com/problems/next-permutation/
 
 Submission Date:
-2026-09-05 12:23:48
+2026-09-06 12:58:10
 
 Generated automatically by LeetSync.
