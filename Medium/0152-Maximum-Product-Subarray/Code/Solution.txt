@@ -1,10 +1,10 @@
+                max=min;
                 min=temp;
             }
 
-            max=Math.max(nums[i],max*nums[i]);
+            max=Math.max(nums[i],max*nums[i]);//stores 
             min=Math.min(nums[i],min*nums[i]);
             answer=Math.max(answer,max);
-                max=min;
         }
         return answer;
 
