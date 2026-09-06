@@ -9,7 +9,7 @@ Language: 1class Solution {
 3
 4        String answer="";
 5
-6        for(int i=0;i<s.length();i++){
+6        for(int i=0;i<s.length();i++){//in this problem , we consider each char is center
 7
 8            String odd=expend(s,i,i);//odd char
 9            String even=expend(s,i,i+1);
@@ -37,6 +37,6 @@ Problem URL:
 https://leetcode.com/problems/longest-palindromic-substring/
 
 Submission Date:
-2026-09-05 14:57:27
+2026-09-06 13:04:23
 
 Generated automatically by LeetSync.
