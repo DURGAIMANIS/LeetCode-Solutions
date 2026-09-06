@@ -4,41 +4,48 @@ Problem Number: 56
 
 Difficulty: Medium
 
-Language: /*
-
-    Time Complexity : O(NlogN), Sorting the array(intervals) costs O(NlogN). Where N is the size of
-    the Vector(intervals).
-
-    Space Complexity : O(1), Constant Space. Extra space is only allocated for the Vector(output)
-    which can go upto size N , however the output does not count towards the space complexity.
-
-    Solved using Array + Sorting.
-
-*/
-
-class Solution {
-public:
-    vector<vector<int>> merge(vector<vector<int>>& intervals) {
-        int n = intervals.size();
-        sort(intervals.begin(), intervals.end());
-        vector<vector<int>> output;
-        for(auto interval : intervals){
-            if(output.empty() || output.back()[1] < interval[0]){
-                output.push_back(interval);
-            }
-            else{
-                output.back()[1] = max(output.back()[1], interval[1]);
-            }
-        }
-        return output;
-    }
-};
-
+Language: 1class Solution {
+2    public int[][] merge(int[][] intervals) {
+3        //sort first 
+4        Arrays.sort(intervals,(a,b) -> a[0]-b[0]);//sort ir based on the min difference
+5
+6        int[][] result=new int[intervals.length][2];
+7        int resultIndex=0;
+8
+9        int currentStart=intervals[0][0];
+10        int currentEnd=intervals[0][1];
+11
+12        for(int i=1;i<intervals.length;i++){
+13
+14            int nextStart=intervals[i][0];
+15            int nextEnd=intervals[i][1];
+16
+17            if(nextStart<=currentEnd){
+18                currentEnd=Math.max(currentEnd,nextEnd);
+19            }
+20            else{
+21                result[resultIndex][0]=currentStart;
+22                result[resultIndex][1]=currentEnd;
+23
+24                resultIndex++;
+25
+26                currentStart=nextStart;
+27                currentEnd=nextEnd;
+28            }
+29        }
+30
+31        result[resultIndex][0]=currentStart;//last set
+32        result[resultIndex][1]=currentEnd;
+33
+34        resultIndex++;
+35        return Arrays.copyOf(result,resultIndex);
+36    }
+37}
 
 Problem URL:
 https://leetcode.com/problems/merge-intervals/
 
 Submission Date:
-2026-09-02 04:34:37
+2026-09-06 12:56:06
 
 Generated automatically by LeetSync.
