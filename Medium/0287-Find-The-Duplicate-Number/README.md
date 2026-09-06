@@ -6,24 +6,22 @@ Difficulty: Medium
 
 Language: 1class Solution {
 2    public int findDuplicate(int[] nums) {
-3
-4        Arrays.sort(nums);
-5
-6        for (int i = 1; i < nums.length; i++) {
-7
-8            if (nums[i] == nums[i - 1]) {
-9                return nums[i];
-10            }
-11        }
-12
-13        return -1;
-14    }
-15}
+3        boolean arr[]=new boolean[nums.length];
+4        for(int i=0;i<nums.length;i++){
+5            if(arr[nums[i]]==true){
+6                return nums[i];
+7            }else{
+8                arr[nums[i]]=true;
+9            }
+10        }
+11        return -1;
+12    }
+13}
 
 Problem URL:
 https://leetcode.com/problems/find-the-duplicate-number/
 
 Submission Date:
-2026-09-06 12:47:56
+2026-09-06 12:49:02
 
 Generated automatically by LeetSync.
