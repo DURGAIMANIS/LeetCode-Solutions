@@ -16,8 +16,8 @@ Language: 1class Solution {
 10                min=temp;
 11            }
 12
-13            max=Math.max(nums[i],max*nums[i]);
-14            min=Math.min(nums[i],min*nums[i]);
+13            max=Math.max(nums[i],max*nums[i]);//stores max
+14            min=Math.min(nums[i],min*nums[i]);//stores min
 15            answer=Math.max(answer,max);
 16        }
 17        return answer;
@@ -30,6 +30,6 @@ Problem URL:
 https://leetcode.com/problems/maximum-product-subarray/
 
 Submission Date:
-2026-09-06 12:38:05
+2026-09-06 12:41:42
 
 Generated automatically by LeetSync.
