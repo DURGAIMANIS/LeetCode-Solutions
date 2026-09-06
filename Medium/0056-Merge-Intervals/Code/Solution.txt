@@ -3,14 +3,11 @@
                 currentEnd=nextEnd;
             }
         }
-                resultIndex++;
 
-           result[resultIndex][0]=currentStart;
+        result[resultIndex][0]=currentStart;//last set
+        result[resultIndex][1]=currentEnd;
 
-                result[resultIndex][1]=currentEnd;
-            result[resultIndex][1]=currentEnd;
-
-            resultIndex++;
-          return Arrays.copyOf(result,resultIndex);
+        resultIndex++;
+        return Arrays.copyOf(result,resultIndex);
     }
 }
