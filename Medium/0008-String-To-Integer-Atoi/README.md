@@ -26,7 +26,7 @@ Language: 1class Solution {
 20        while(i<s.length()&&Character.isDigit(s.charAt(i))){
 21            int digit=s.charAt(i)-'0';//give string as int("4" to 4)
 22            // 4. Check overflow
-23            if (result > (Integer.MAX_VALUE - digit) / 10) {
+23            if (result > (Integer.MAX_VALUE - digit) / 10) {//interger limit is -217658,if goes beyond that  
 24                if (sign == 1) {
 25                    return Integer.MAX_VALUE;
 26                } else {
@@ -44,6 +44,6 @@ Problem URL:
 https://leetcode.com/problems/string-to-integer-atoi/
 
 Submission Date:
-2026-09-05 13:17:59
+2026-09-06 13:03:10
 
 Generated automatically by LeetSync.
