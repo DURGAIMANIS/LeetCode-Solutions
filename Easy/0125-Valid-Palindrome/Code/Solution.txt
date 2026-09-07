@@ -1,6 +1,3 @@
-                continue;
-            }
-
             if(!Character.isLetterOrDigit(s.charAt(right))){
                 right--;
                 continue;
@@ -16,3 +13,4 @@
         }
        return true;
     }
+}
