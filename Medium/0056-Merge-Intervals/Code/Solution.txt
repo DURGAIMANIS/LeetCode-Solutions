@@ -1,5 +1,3 @@
-
-                currentStart=nextStart;
                 currentEnd=nextEnd;
             }
         }
