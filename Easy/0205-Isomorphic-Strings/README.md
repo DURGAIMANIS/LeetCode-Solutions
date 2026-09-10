@@ -28,14 +28,13 @@ Language: 1class Solution {
 22
 23        }
 24        return true;
-25
-26    }
-27}
+25    }
+26}
 
 Problem URL:
 https://leetcode.com/problems/isomorphic-strings/
 
 Submission Date:
-2026-09-10 10:17:00
+2026-09-10 10:18:45
 
 Generated automatically by LeetSync.
