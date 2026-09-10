@@ -1,15 +1,16 @@
+            }else{
+                map.put(nums[i],1);
+            }
+        }
 
-        Collections.sort(list, (a,b)-> map.get(b)-map.get(a));
         ArrayList<Integer> list=new ArrayList<>(map.keySet());
 
-        }
-            }
-                map.put(nums[i],1);
-            }else{
-                map.put(nums[i],map.get(nums[i])+1);
-            if(map.containsKey(nums[i])){
-        for(int i=0;i<nums.length;i++){
+        Collections.sort(list, (a,b)-> map.get(b)-map.get(a));
 
-        HashMap<Integer,Integer> map=new HashMap<>();
-    public int[] topKFrequent(int[] nums, int k) {
-class Solution {
+        int arr[]=new int[k];
+
+        for(int i=0;i<k;i++){
+            arr[i]=list.get(i);
+        }
+        return arr;
+    }
