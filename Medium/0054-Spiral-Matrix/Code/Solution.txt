@@ -1,18 +1,11 @@
-
-            right--;
-
+            //bottom to top
+        if(left<=right){
+            for(int i=bottom;i>=top;i--){
+                list.add(matrix[i][left]);
             }
-                list.add(matrix[i][right]);
-            for(int i=top;i<=bottom;i++){
-
-            //top to bottom
-            top++;
-            }
-                list.add(matrix[top][i]);
-            for(int i=left;i<=right;i++){
-            //left to right
-        while(left<=right&&top<=bottom){
-
-        List<Integer> list=new ArrayList<>();
-        
-        int bottom=matrix.length-1;
+            left++;
+        }
+        }
+        return list;
+    }
+}
