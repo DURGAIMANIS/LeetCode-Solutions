@@ -1,3 +1,7 @@
+            // 4. Check overflow
+            if (result > (Integer.MAX_VALUE - digit) / 10) {//interger limit is -217658,if goes beyond 
+            that  
+                if (sign == 1) {
                     return Integer.MAX_VALUE;
                 } else {
                     return Integer.MIN_VALUE;
