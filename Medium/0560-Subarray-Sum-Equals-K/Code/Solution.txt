@@ -7,5 +7,9 @@
         }
         return count;
 
-    }
-}
+        int count=0;
+        int prefixSum=0;
+        map.put(0,1);
+        HashMap<Integer,Integer> map=new HashMap<>();
+    public int subarraySum(int[] nums, int k) {
+class Solution {
