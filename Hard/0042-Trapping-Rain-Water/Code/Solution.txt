@@ -1,3 +1,6 @@
+        int water=0;
+
+        while(left<right){
             if(leftmax<rightmax){
                 left++;
                 leftmax=Math.max(leftmax,height[left]);
