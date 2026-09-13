@@ -4,17 +4,34 @@ Problem Number: 42
 
 Difficulty: Hard
 
-Language:                                |"""|                    
-                               |___|                    
-           |"""|~~~~~~~~~~~~~~~|"""||"""|~~~~~|"""|     
-           |___|               |___||___|     |___|     
- |"""|~~~~~|"""||"""|~~~~~|"""||"""||"""||"""||"""||"""|
- |___|     |___||___|     |___||___||___||___||___||___|
+Language: 1class Solution {
+2    public int trap(int[] height) {
+3        int left=0;
+4        int right=height.length-1;
+5
+6        int leftmax=height[left];
+7        int rightmax=height[right];//initial consideration
+8        int water=0;
+9
+10        while(left<right){
+11            if(leftmax<rightmax){
+12                left++;
+13                leftmax=Math.max(leftmax,height[left]);
+14                water+=leftmax - height[left];
+15            }else{
+16                right--;
+17                rightmax=Math.max(rightmax,height[right]);
+18                water+=rightmax- height[right];
+19            }
+20        }
+21        return water;
+22    }
+23}
 
 Problem URL:
 https://leetcode.com/problems/trapping-rain-water/
 
 Submission Date:
-2026-09-13 15:08:20
+2026-09-13 15:20:54
 
 Generated automatically by LeetSync.
