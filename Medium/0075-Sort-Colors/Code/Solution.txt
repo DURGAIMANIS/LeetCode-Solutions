@@ -1,16 +1,16 @@
+                nums[mid] = nums[low];
+                nums[low] = temp;
+                low++;
+                mid++;
             }else if(nums[mid]==1){
                 mid++;
-                mid++;
-                low++;
             }else{//nums[mid==2]
                 int temp=nums[high];
+               int temp = nums[mid];
+            if(nums[mid]==0){
+        while(mid<=high){
+
+        int high=nums.length-1;
                 nums[high]=2;
                 nums[mid]=temp;
                 high--;
-            }
-                nums[low]=0;
-                nums[mid]=nums[low];
-                int t=nums[mid];
-        }
-    }
-}
