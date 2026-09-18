@@ -6,33 +6,27 @@ Difficulty: Medium
 
 Language: class Solution {
     public int characterReplacement(String s, int k) {
-        int ans = 0;
-        int n = s.length();
-        for (char c = 'A'; c <= 'Z'; c++) {
-            int i = 0, j = 0, replaced = 0;
-            while (j < n) {
-                if (s.charAt(j) == c) {
-                    j++;
-                } else if (replaced < k) {
-                    j++;
-                    replaced++;
-                } else if (s.charAt(i) == c) {
-                    i++;
-                } else {
-                    i++;
-                    replaced--;
-                }
-                ans = Math.max(ans, j - i);
+        int left=0,right=0,maxFreq=0,ans=0;
+        int[]arr=new int[26];
+        while(right<s.length()){
+            arr[s.charAt(right)-'A']++;
+            maxFreq=Math.max(maxFreq,arr[s.charAt(right)-'A']);
+            if((right-left+1-maxFreq)>k){
+                arr[s.charAt(left)-'A']--;
+                left++;
             }
+            if((right-left+1-maxFreq)<=k)ans=Math.max(ans,right-left+1);
+            right++;
         }
         return ans;
     }
 }
 
+
 Problem URL:
 https://leetcode.com/problems/longest-repeating-character-replacement/
 
 Submission Date:
-2026-08-25 04:01:51
+2026-09-18 11:01:29
 
 Generated automatically by LeetSync.
