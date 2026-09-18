@@ -4,28 +4,26 @@ Problem Number: 643
 
 Difficulty: Easy
 
-Language: class Solution {
-    public double findMaxAverage(int[] nums, int k) {
-        int n = nums.length;
-        int sum = 0;
-        for (int i = 0; i < k; i++) {
-            sum += nums[i];
-        }
-        int maxSum = sum;
-        for (int i = k; i < n; i++) {
-            sum = sum - nums[i - k] + nums[i];
-            if (sum > maxSum) {
-                maxSum = sum;
-            }
-        }
-        return (double) maxSum / k;
-    }
-}
+Language: 1class Solution {
+2    public double findMaxAverage(int[] nums,int k) {
+3        double sum=0;
+4        for(int i=0;i<k;i++){
+5            sum+=nums[i];
+6        }
+7        double max=sum;
+8        for(int i=k;i<nums.length;i++){
+9            sum+=nums[i];
+10            sum-=nums[i-k];
+11            max=Math.max(max,sum);
+12        }
+13        return max/k;
+14    }
+15}
 
 Problem URL:
 https://leetcode.com/problems/maximum-average-subarray-i/
 
 Submission Date:
-2026-09-18 09:50:38
+2026-09-18 11:46:15
 
 Generated automatically by LeetSync.
