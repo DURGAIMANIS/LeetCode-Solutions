@@ -1,6 +1,3 @@
-            }else{
-                map.put(nums[i],1);
-            }
         }
 
         ArrayList<Integer> list=new ArrayList<>(map.keySet());
@@ -14,3 +11,4 @@
         }
         return arr;
     }
+}
