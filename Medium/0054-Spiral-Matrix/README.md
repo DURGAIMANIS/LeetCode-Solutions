@@ -7,10 +7,10 @@ Difficulty: Medium
 Language: 1class Solution {
 2    public List<Integer> spiralOrder(int[][] matrix) {
 3        int left=0;
-4        int right=matrix[0].length-1;
+4        int right=matrix[0].length-1;//column
 5
 6        int top=0;
-7        int bottom=matrix.length-1;
+7        int bottom=matrix.length-1;//row
 8        
 9        List<Integer> list=new ArrayList<>();
 10
@@ -52,6 +52,6 @@ Problem URL:
 https://leetcode.com/problems/spiral-matrix/
 
 Submission Date:
-2026-09-11 01:42:10
+2026-09-18 11:28:40
 
 Generated automatically by LeetSync.
