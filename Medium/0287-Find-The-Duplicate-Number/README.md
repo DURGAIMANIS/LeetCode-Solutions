@@ -8,7 +8,7 @@ Language: 1class Solution {
 2    public int findDuplicate(int[] nums) {
 3        boolean arr[]=new boolean[nums.length];
 4        for(int i=0;i<nums.length;i++){
-5            if(arr[nums[i]]==true){
+5            if(arr[nums[i]]==true){//nums[3]=2 arr[2]=true then nums[3] is repeated
 6                return nums[i];
 7            }else{
 8                arr[nums[i]]=true;
@@ -22,6 +22,6 @@ Problem URL:
 https://leetcode.com/problems/find-the-duplicate-number/
 
 Submission Date:
-2026-09-06 12:49:02
+2026-09-18 11:24:44
 
 Generated automatically by LeetSync.
