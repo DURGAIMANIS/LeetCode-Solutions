@@ -46,6 +46,6 @@ Problem URL:
 https://leetcode.com/problems/merge-intervals/
 
 Submission Date:
-2026-09-07 03:47:58
+2026-09-18 11:30:20
 
 Generated automatically by LeetSync.
