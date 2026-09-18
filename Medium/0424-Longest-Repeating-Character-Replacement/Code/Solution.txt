@@ -1,15 +1,16 @@
-                    replacement++;
-                }else if(s.charAt(left)==c){//no replacement, so delete first, but first may be sameas c
-                    right++;
+            int replacement=0;
+            while(right<n){
+                if(s.charAt(right)==c){// chacrater is same as c
                     right++;
                 }else if(replacement<k){//chacrater is not same,but we have replacement
-                if(s.charAt(right)==c){// chacrater is same as c
-            while(right<n){
-            int replacement=0;
-            int right=0;
-            int left=0;
-        for(char c='A';c<='Z';c++){
-        int n=s.length();
+                    right++;
+                    replacement++;
+                }else if(s.charAt(left)==c){//no replacement, so delete first, but first may be sameas c
                     left++;
                 }else{//no replcement, so delete first, but first may not be same as c
                     left++;
+                    replacement--;
+                }
+                max=Math.max(max,right-left);// +1 not necessary, because right is already incraement 
+                by 1 
+            }
