@@ -1,6 +1,3 @@
-            if(!Character.isLetterOrDigit(s.charAt(right))){
-                right--;
-                continue;
             }
             char ch1=Character.toLowerCase(s.charAt(left));
             char ch2=Character.toLowerCase(s.charAt(right));
