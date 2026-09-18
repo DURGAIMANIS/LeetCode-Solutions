@@ -2,7 +2,7 @@ class Solution {
     public int findDuplicate(int[] nums) {
         boolean arr[]=new boolean[nums.length];
         for(int i=0;i<nums.length;i++){
-            if(arr[nums[i]//4]==true){
+            if(arr[nums[i]]==true){//nums[3]=2 arr[2]=true then nums[3] is repeated
                 return nums[i];
             }else{
                 arr[nums[i]]=true;
