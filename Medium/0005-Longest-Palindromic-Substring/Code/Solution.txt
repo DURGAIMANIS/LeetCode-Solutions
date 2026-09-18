@@ -1,18 +1,11 @@
-            }
-        }
         return answer;
 
     }
     public String expend(String s,int left,int right){
         while(left>=0&&right<s.length()&&s.charAt(left)==s.charAt(right)){
-                answer=even;
-            if(even.length()>answer.length()){
-            }
-                answer=odd;
-            if(odd.length()>answer.length()){
-
-            String even=expend(s,i,i+1);
-            String odd=expend(s,i,i);//odd char
             left--;
             right++;
         }
+        return s.substring(left+1,right);
+    }
+}
