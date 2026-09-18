@@ -27,6 +27,6 @@ Problem URL:
 https://leetcode.com/problems/longest-repeating-character-replacement/
 
 Submission Date:
-2026-09-18 11:01:29
+2026-09-18 11:04:42
 
 Generated automatically by LeetSync.
