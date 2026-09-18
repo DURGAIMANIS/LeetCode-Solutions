@@ -1,16 +1,15 @@
                 }else if(s.charAt(left)==c){
                     replacement++;
-                    left++;
-                }else{
-                    left++;
-                    replacement--;
-                }
-                max=Math.max(max,right-left);
-            }
-        }
                     right++;
                 }else if(replacement<k){
                     right++;
                 if(s.charAt(right)==c){
             while(right<n){
             int replacement=0;
+            int right=0;
+        for(char c='A';c<='Z';c++){
+            int left=0;
+                    left++;
+                }else{
+                    left++;
+                    replacement--;
