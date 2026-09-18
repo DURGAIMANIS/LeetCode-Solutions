@@ -1,18 +1,16 @@
-                    replaced++;
-                } else if (s.charAt(i) == c) {
-                    i++;
-                } else {
-                    j++;
-                } else if (replaced < k) {
-                    j++;
-                if (s.charAt(j) == c) {
-            while (j < n) {
-                    i++;
-                    replaced--;
+                }else if(s.charAt(left)==c){
+                    replacement++;
+                    left++;
+                }else{
+                    left++;
+                    replacement--;
                 }
-                ans = Math.max(ans, j - i);
+                max=Math.max(max,right-left);
             }
-            int replaced = 0;
         }
-        return ans;
-    }
+                    right++;
+                }else if(replacement<k){
+                    right++;
+                if(s.charAt(right)==c){
+            while(right<n){
+            int replacement=0;
