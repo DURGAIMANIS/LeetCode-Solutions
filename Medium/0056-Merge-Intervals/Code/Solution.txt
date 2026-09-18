@@ -6,6 +6,6 @@
         result[resultIndex][1]=currentEnd;
 
         resultIndex++;
-        return Arrays.copyOf(result,resultIndex);
+        return Arrays.copyOf(result,resultIndex);//removes null 
     }
 }
