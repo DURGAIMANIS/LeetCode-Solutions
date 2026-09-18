@@ -1,15 +1,15 @@
-      HashSet<Integer> set=new HashSet<>();
-
-      for(int i=0;i<nums.length;i++){
-        set.add(nums[i]);
-      }
-
-      int longest=0;
-    ArrayList<Integer> list = new ArrayList<>(set);
-      for(int i=0;i<list.size();i++){
-
-         int num=list.get(i);
 
          if(!set.contains(num-1)){
-    public int longestConsecutive(int[] nums) {
-class Solution {
+            int current=num;
+            int count=1;
+
+            while(set.contains(current+1)){
+                current++;
+                count++;
+            }
+            longest=Math.max(longest,count);
+         }
+      }   
+      return longest;
+    }
+}
