@@ -1,3 +1,6 @@
+                required--;
+            }
+
             while(required==0){
                 int currentLength=right-left+1;
                 if(currentLength<minLength){
