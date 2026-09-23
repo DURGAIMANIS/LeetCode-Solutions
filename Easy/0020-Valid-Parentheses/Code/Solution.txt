@@ -1,0 +1,17 @@
+           }else{
+            if(stack.isEmpty()) return false;
+
+            if((top == '[' && ch == ']') ||(top == '(' && ch == ')') ||(top == '{' && ch == '}')){
+                stack.pop();
+            }else{
+            char top = stack.peek();
+            stack.push(ch);
+           if(ch=='('||ch=='['||ch=='{'){
+
+           char ch=s.charAt(i);
+        for(int i=0;i<n;i++){
+        Stack<Character> stack=new Stack<>();
+    public boolean isValid(String s) {
+        int n=s.length();
+class Solution {
+                return false;
