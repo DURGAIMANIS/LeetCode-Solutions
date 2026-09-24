@@ -3,11 +3,15 @@
         long a=0;
         if(n<0) a=n * -1;
         else a=n;
-        double power=pow(x,a);
-        double answer=0;
 
-        if(n<0) answer = 1/power;
-        else answer=power;
-        return answer;
-    }
-}
+
+
+        else return x*half*half;
+        if(n%2==0) return half*half;
+        double half=pow(x,n/2);
+
+
+        if(n==0) return 1.0000;
+    public double pow(double x,long n){
+
+class Solution {
