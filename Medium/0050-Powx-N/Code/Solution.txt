@@ -1,0 +1,13 @@
+    }
+    public double myPow(double x, int n) {
+        long a=0;
+        if(n<0) a=n * -1;
+        else a=n;
+        double power=pow(x,a);
+        double answer=0;
+
+        if(n<0) answer = 1/power;
+        else answer=power;
+        return answer;
+    }
+}
