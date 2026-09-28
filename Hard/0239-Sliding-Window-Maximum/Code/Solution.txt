@@ -8,10 +8,6 @@
                 result[right-k+1]=nums[deque.peekFirst()];
             }
         }
-            while(!deque.isEmpty()&&deque.peekFirst()<=right-k){
-        for(int right=0;right<n;right++){
-        Deque<Integer> deque=new LinkedList<>();
-        int[] result=new int[n-k+1];
-        int n=nums.length;
-    public int[] maxSlidingWindow(int[] nums, int k) {
-class Solution {
+        return result;
+    }
+}
