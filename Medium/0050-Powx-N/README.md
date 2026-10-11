@@ -36,6 +36,6 @@ Problem URL:
 https://leetcode.com/problems/powx-n/
 
 Submission Date:
-2026-09-24 02:03:28
+2026-10-11 17:05:01
 
 Generated automatically by LeetSync.
