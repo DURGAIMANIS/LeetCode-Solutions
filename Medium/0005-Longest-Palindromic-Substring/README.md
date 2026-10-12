@@ -37,6 +37,6 @@ Problem URL:
 https://leetcode.com/problems/longest-palindromic-substring/
 
 Submission Date:
-2026-09-18 11:38:18
+2026-10-12 06:00:09
 
 Generated automatically by LeetSync.
