@@ -1,16 +1,15 @@
+                water+=leftmax - height[left+1];
+                left++;
         while(left<right){
             if(leftmax<rightmax){
+                leftmax=Math.max(leftmax,height[left+1]);//(current max,nextvalue)
 
-                leftmax=Math.max(leftmax,height[left+1]);
-                water+=leftmax - height[left+1];
             }else{
-        int water=0;
-
                 rightmax=Math.max(rightmax,height[right-1]);
                 water+=rightmax- height[right-1];
+                right--;
             }
         }
         return water;
-                left++;
-                right--;
     }
+}
