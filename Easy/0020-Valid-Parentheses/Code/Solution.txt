@@ -1,1 +1,16 @@
-c
+
+            if((top == '[' && ch == ']') ||(top == '(' && ch == ')') ||(top == '{' && ch == '}')){
+                stack.pop();
+           }else{
+            if(stack.isEmpty()) return false;
+            char top = stack.peek();
+           if(ch=='('||ch=='['||ch=='{'){
+            stack.push(ch);
+            }else{
+                return false;
+            }
+           }
+        }
+        return stack.isEmpty();
+    }
+}
