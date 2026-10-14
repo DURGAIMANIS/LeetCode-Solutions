@@ -8,8 +8,8 @@
                 return false;
             }
 
-            map1.put(a,b);//e->
-            map2.put(b,a);
+            map1.put(a,b);//e->a
+            map2.put(b,a);//a->e
 
         }
         return true;
