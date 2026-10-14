@@ -4,13 +4,12 @@
                 deque.pollLast();
             while(!deque.isEmpty()&&deque.peekFirst()<=right-k){//remove from the first because of 
             maintan the window 
-            }
+        for(int right=0;right<n;right++){
 
-            deque.addLast(right);//stores the index
-            if(right>=k-1){
-                result[right-k+1]=nums[deque.peekFirst()];
-            }
-        }
-        return result;
-    }
-}
+        int result[]=new int[n-k+1];
+        Deque<Integer> deque=new LinkedList<>();
+
+        int n=nums.length;
+        
+class Solution {
+    public int[] maxSlidingWindow(int[] nums, int k) {
