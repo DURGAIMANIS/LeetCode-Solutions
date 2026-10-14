@@ -16,6 +16,6 @@ Problem URL:
 https://leetcode.com/problems/range-sum-query-immutable/
 
 Submission Date:
-2026-09-19 03:41:55
+2026-10-14 06:32:20
 
 Generated automatically by LeetSync.
