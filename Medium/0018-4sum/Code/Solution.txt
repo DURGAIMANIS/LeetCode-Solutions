@@ -4,8 +4,13 @@
                         right--;
                     }
                 }
-            }
-        }
-        return result;
-    }
-}
+                        left++;
+                        right--;
+                    }
+                        }
+
+
+                        while(left<right&&nums[right]==nums[right-1]){
+                            right--;
+                            left++;
+                        }
