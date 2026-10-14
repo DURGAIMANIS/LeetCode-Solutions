@@ -1,18 +1,3 @@
-                required--;
-            }
-
-            while(required==0){
-                int currentLength=right-left+1;
-                if(currentLength<minLength){
-                    minLength=currentLength;
-                    start=left;
-                }
-                char leftChar = s.charAt(left);
-                window[leftChar]--;
-
-                if (need[leftChar] > 0 && window[leftChar] < need[leftChar]) {
-                   required++;
-                }
                 left++;
             }
             right++;
