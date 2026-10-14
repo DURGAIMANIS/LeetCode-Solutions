@@ -14,7 +14,7 @@ Language: 1class Solution {
 8        for(int right=0;right<n;right++){
 9
 10            while(!deque.isEmpty()&&deque.peekFirst()<=right-k){//remove from the first because of maintan the window 
-11                deque.pollFirst();;
+11                deque.pollFirst();
 12            }
 13            while(!deque.isEmpty()&&nums[deque.peekLast()]<nums[right]){
 14                deque.pollLast();
@@ -33,6 +33,6 @@ Problem URL:
 https://leetcode.com/problems/sliding-window-maximum/
 
 Submission Date:
-2026-09-28 05:07:30
+2026-10-14 06:15:06
 
 Generated automatically by LeetSync.
