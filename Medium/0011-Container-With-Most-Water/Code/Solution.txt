@@ -9,4 +9,8 @@
         }
         return maxarea;
     }
-}
+        int maxarea=0;
+        while(left<right){
+
+        int left=0;
+        int right=height.length-1;
