@@ -9,7 +9,8 @@
 
         for(int i=0;i<s.length();i++){
             count+=expend(s,i,i);//odd char
-
-        int count=0;
-class Solution {
-    public int countSubstrings(String s) {
+        while(left>=0&&right<s.length()&&s.charAt(left)==s.charAt(right)){
+            count++;
+            left--;
+            right++;
+        }
