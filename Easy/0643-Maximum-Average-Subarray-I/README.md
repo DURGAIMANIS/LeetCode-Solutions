@@ -24,6 +24,6 @@ Problem URL:
 https://leetcode.com/problems/maximum-average-subarray-i/
 
 Submission Date:
-2026-09-18 11:46:15
+2026-10-14 05:06:37
 
 Generated automatically by LeetSync.
