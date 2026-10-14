@@ -4,39 +4,43 @@ Problem Number: 128
 
 Difficulty: Medium
 
-Language: 1class Solution {
-2    public int longestConsecutive(int[] nums) {
-3      HashSet<Integer> set=new HashSet<>();
-4
-5      for(int i=0;i<nums.length;i++){
-6        set.add(nums[i]);
-7      }
-8
-9      int longest=0;
-10    ArrayList<Integer> list = new ArrayList<>(set);
-11      for(int i=0;i<list.size();i++){
-12
-13         int num=list.get(i);
+Language: 1
+2import java.util.*;
+3
+4class Solution {
+5    public int longestConsecutive(int[] nums) {
+6        if (nums.length == 0) {
+7            return 0;
+8        }
+9
+10        Arrays.sort(nums);
+11
+12        int count = 1;
+13        int max = 1;
 14
-15         if(!set.contains(num-1)){
-16            int current=num;
-17            int count=1;
-18
-19            while(set.contains(current+1)){
-20                current++;
+15        for (int i = 1; i < nums.length; i++) {
+16            if (nums[i] == nums[i - 1]) {
+17                continue;
+18            }
+19
+20            if (nums[i] == nums[i - 1] + 1) {
 21                count++;
-22            }
-23            longest=Math.max(longest,count);
-24         }
-25      }   
-26      return longest;
-27    }
-28}
+22            } else {
+23                count = 1;
+24            }
+25
+26            max = Math.max(max, count);
+27        }
+28
+29        return max;
+30    }
+31}
+32
 
 Problem URL:
 https://leetcode.com/problems/longest-consecutive-sequence/
 
 Submission Date:
-2026-09-18 11:41:36
+2026-10-14 02:48:10
 
 Generated automatically by LeetSync.
