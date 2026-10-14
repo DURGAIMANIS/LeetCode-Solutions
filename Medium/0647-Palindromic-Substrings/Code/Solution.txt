@@ -1,18 +1,15 @@
-            count+=expend(s,i,i+1);
-
         }
         return count;
 
     }
     public int expend(String s,int left,int right){
         int count=0;
-        while(left>=0&&right<s.length()&&s.charAt(left)==s.charAt(right)){
-            count++;
-            count+=expend(s,i,i);//odd char
+            count+=expend(s,i,i+1);
+
+
         for(int i=0;i<s.length();i++){
+            count+=expend(s,i,i);//odd char
 
         int count=0;
-
-            left--;
-            right++;
-        }
+class Solution {
+    public int countSubstrings(String s) {
