@@ -55,6 +55,6 @@ Problem URL:
 https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
 Submission Date:
-2026-10-14 05:12:22
+2026-10-14 05:14:22
 
 Generated automatically by LeetSync.
