@@ -1,3 +1,10 @@
+                }
+                char leftChar = s.charAt(left);
+                window[leftChar]--;
+
+                if (need[leftChar] > 0 && window[leftChar] < need[leftChar]) {//< only
+                   required++;
+                }
                 left++;
             }
             right++;
@@ -7,5 +14,3 @@
         }
         return s.substring(start, start + minLength);
 
-    }
-}
