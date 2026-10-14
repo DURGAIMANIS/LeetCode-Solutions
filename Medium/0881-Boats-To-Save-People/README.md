@@ -16,17 +16,16 @@ Language: 1class Solution {
 10                left++;
 11            }
 12            right--;
-13        
-14            count++;
-15        }
-16        return count;
-17    }
-18}
+13            count++;
+14        }
+15        return count;
+16    }
+17}
 
 Problem URL:
 https://leetcode.com/problems/boats-to-save-people/
 
 Submission Date:
-2026-09-18 11:45:55
+2026-10-14 05:05:28
 
 Generated automatically by LeetSync.
