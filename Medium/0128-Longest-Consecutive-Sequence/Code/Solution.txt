@@ -1,15 +1,16 @@
 
-         if(!set.contains(num-1)){
-            int current=num;
-            int count=1;
-
-            while(set.contains(current+1)){
-                current++;
+            if (nums[i] == nums[i - 1] + 1) {
                 count++;
+            if (nums[i] == nums[i - 1]) {
+                continue;
             }
-            longest=Math.max(longest,count);
-         }
-      }   
-      return longest;
-    }
-}
+        int max = 1;
+
+        for (int i = 1; i < nums.length; i++) {
+
+        int count = 1;
+            } else {
+                count = 1;
+            }
+
+            max = Math.max(max, count);
