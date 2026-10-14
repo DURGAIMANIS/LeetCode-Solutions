@@ -1,16 +1,16 @@
-            if(map2.containsKey(b)&&map2.get(b)!=a){
-                return false;
-            }
                 return false;
             }
 
 
             if(map1.containsKey(a)&&map1.get(a)!=b){
-
-            char a=s.charAt(i);
             char b=t.charAt(i);
-        HashMap<Character,Character> map2=new HashMap<>();
-        for(int i=0;i<s.length();i++){
-        if(s.length()!=t.length()) return false;
+            if(map2.containsKey(b)&&map2.get(b)!=a){
+                return false;
+            }
 
-        HashMap<Character,Character> map1=new HashMap<>();
+            map1.put(a,b);//e->
+            map2.put(b,a);
+
+        }
+        return true;
+    }
