@@ -23,8 +23,8 @@ Language: 1class Solution {
 17                return false;
 18            }
 19
-20            map1.put(a,b);
-21            map2.put(b,a);
+20            map1.put(a,b);//e->a
+21            map2.put(b,a);//a->e
 22
 23        }
 24        return true;
@@ -35,6 +35,6 @@ Problem URL:
 https://leetcode.com/problems/isomorphic-strings/
 
 Submission Date:
-2026-10-14 03:17:11
+2026-10-14 03:19:48
 
 Generated automatically by LeetSync.
