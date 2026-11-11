@@ -4,19 +4,17 @@ Problem Number: 1581
 
 Difficulty: Easy
 
-Language: 1# Write your MySQL query statement below
-2
-3select v.customer_id, COUNT(*) as count_no_trans
-4from Visits as v
-5where v.visit_id not in(
-6  select t.visit_id from Transactions as t
-7)
-8GROUP BY v.customer_id;
+Language: 1select v.customer_id,COUNT(*) AS count_no_trans
+2from Visits v
+3left join Transactions s # left join, because visitors , but no need to trans
+4on v.visit_id=s.visit_id
+5where transaction_id is null # no transaction in 1st condition
+6group by v.customer_id; # count the customer visit
 
 Problem URL:
 https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/
 
 Submission Date:
-2026-09-06 06:20:16
+2026-11-11 04:16:05
 
 Generated automatically by LeetSync.
