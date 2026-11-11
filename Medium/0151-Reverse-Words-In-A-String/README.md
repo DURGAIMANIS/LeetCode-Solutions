@@ -16,14 +16,13 @@ Language: 1class Solution {
 10            }
 11        }
 12        return result;
-13        
-14    }
-15}
+13    }
+14}
 
 Problem URL:
 https://leetcode.com/problems/reverse-words-in-a-string/
 
 Submission Date:
-2026-10-12 05:36:30
+2026-11-11 02:04:58
 
 Generated automatically by LeetSync.
