@@ -4,17 +4,15 @@ Problem Number: 1378
 
 Difficulty: Easy
 
-Language: 1# Write your MySQL query statement below
-2
-3select uni.unique_id, e.name
-4from Employees as e
-5left join EmployeeUNI as uni
-6on e.id=uni.id;
+Language: 1select u.unique_id,e.name
+2from Employees e
+3left join EmployeeUNI u
+4on e.id=u.id;
 
 Problem URL:
 https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/
 
 Submission Date:
-2026-09-06 05:58:27
+2026-11-11 03:58:18
 
 Generated automatically by LeetSync.
