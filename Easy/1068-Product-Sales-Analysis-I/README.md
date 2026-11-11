@@ -4,16 +4,15 @@ Problem Number: 1068
 
 Difficulty: Easy
 
-Language: 1# Write your MySQL query statement below
-2select p.product_name,s.year,s.price
-3from Sales as s
-4inner join Product as p
-5on s.product_id=p.product_id;
+Language: 1select p.product_name,s.year,s.price
+2from Sales s
+3join Product p
+4on s.product_id=p.product_id;
 
 Problem URL:
 https://leetcode.com/problems/product-sales-analysis-i/
 
 Submission Date:
-2026-09-06 06:02:58
+2026-11-11 04:01:54
 
 Generated automatically by LeetSync.
