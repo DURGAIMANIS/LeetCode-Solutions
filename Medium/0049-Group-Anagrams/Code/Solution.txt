@@ -9,6 +9,8 @@
             }
             map.get(key).add(strs[i]);//otherwise, add the string at particular key
         }
+
+        HashMap<String, List<String>> map=new HashMap<>();
         return new ArrayList<>(map.values());//return as ArrayList
     }
 }
