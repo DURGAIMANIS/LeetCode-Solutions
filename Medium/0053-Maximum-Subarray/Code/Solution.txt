@@ -1,6 +1,4 @@
                 currsum=0;
-            }    
-        }
             maxsum=Math.max(maxsum,currsum);
             //but if the negetive comes, then  make it zero
             if(currsum<0){
@@ -11,6 +9,8 @@
             //add every element one by one
         int maxsum=nums[0];
 
+        // Time Complexity: O(n)
+        // Space Complexity: O(1)
 class Solution {
     public int maxSubArray(int[] nums) {
         int currsum=0;
