@@ -6,23 +6,25 @@ Difficulty: Medium
 
 Language: 1class Solution {
 2    public String reverseWords(String s) {
-3        String arr[]=s.trim().split("\\s+");
-4
-5        String result="";
-6        for(int i=arr.length-1;i>=0;i--){
-7            result+=arr[i];
-8            if(i!=0){
-9                result+=" ";
-10            }
-11        }
-12        return result;
-13    }
-14}
+3        // Time Complexity: O(n)
+4        // Space Complexity: O(n)
+5
+6        String[] arr = s.trim().split("\\s+");
+7        StringBuilder result = new StringBuilder();
+8        for (int i=arr.length-1;i>=0;i--) {
+9            result.append(arr[i]);
+10            if (i!=0) {
+11                result.append(" ");
+12            }
+13        }
+14        return result.toString();
+15    }
+16}
 
 Problem URL:
 https://leetcode.com/problems/reverse-words-in-a-string/
 
 Submission Date:
-2026-11-11 02:06:23
+2026-11-11 02:07:31
 
 Generated automatically by LeetSync.
