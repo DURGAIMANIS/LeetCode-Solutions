@@ -4,7 +4,7 @@
                int temp = nums[mid];
                 nums[mid] = nums[low];
                 nums[low] = temp;
-        while(mid<=high){//we also 
+        while(mid<=high){//we also check the middle element also
             if(nums[mid]==0){
         int mid=0;
         int high=nums.length-1;
