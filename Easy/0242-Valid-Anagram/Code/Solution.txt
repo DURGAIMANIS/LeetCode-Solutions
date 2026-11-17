@@ -13,4 +13,4 @@
         for(int i=0;i<s.length();i++){
             freq[s.charAt(i)-'a']++;
 
-        int freq[]=new int[126];// 
+        int freq[]=new int[126];// capital and samll letters included, so 126
