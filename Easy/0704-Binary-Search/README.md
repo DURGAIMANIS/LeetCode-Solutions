@@ -10,7 +10,7 @@ Language: 1class Solution {
 4        int l=0;
 5        int r=nums.length-1;
 6
-7        while(l<=r){
+7        while(l<=r){//we need to check the middle element also
 8            int mid=l+(r-l)/2;
 9            if(nums[mid]==target) return mid;
 10            else if(nums[mid]<target) l=mid+1;
@@ -28,6 +28,6 @@ Problem URL:
 https://leetcode.com/problems/binary-search/
 
 Submission Date:
-2026-11-17 06:04:20
+2026-11-17 06:06:48
 
 Generated automatically by LeetSync.
