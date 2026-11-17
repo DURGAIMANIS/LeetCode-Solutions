@@ -28,6 +28,6 @@ Problem URL:
 https://leetcode.com/problems/binary-search/
 
 Submission Date:
-2026-09-22 01:47:04
+2026-11-17 06:04:20
 
 Generated automatically by LeetSync.
