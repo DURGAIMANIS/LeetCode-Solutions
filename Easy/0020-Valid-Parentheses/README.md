@@ -6,23 +6,19 @@ Difficulty: Easy
 
 Language: 1class Solution {
 2    public boolean isValid(String s) {
-3
-4        while (s.contains("()") || s.contains("[]") || s.contains("{}")) {
-5
-6            s = s.replace("()", "");
-7            s = s.replace("[]", "");
-8            s = s.replace("{}", "");
-9
-10        }
-11
-12        return s.isEmpty();
-13    }
-14}
+3        while(s.contains("()")||s.contains("[]")||s.contains("{}")){
+4            s=s.replace("()","");
+5            s=s.replace("{}","");
+6            s=s.replace("[]","");
+7        }
+8        return s=="";
+9    }
+10}
 
 Problem URL:
 https://leetcode.com/problems/valid-parentheses/
 
 Submission Date:
-2026-11-18 11:09:08
+2026-11-18 11:14:04
 
 Generated automatically by LeetSync.
