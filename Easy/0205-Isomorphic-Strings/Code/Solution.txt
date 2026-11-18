@@ -1,15 +1,14 @@
-            map2[b] = i + 1;
 
-            map1[a] = i + 1;
-            if (map1[a] != map2[b]) {
                 return false;
             }
-            char b = t.charAt(i);
+            if(map2.containsKey(b)&&map2.get(b)!=a){
+                return false;
+            }
 
+            map1.put(a,b);//e->a
+            map2.put(b,a);//a->e
 
-        for (int i = 0; i < s.length(); i++) {
-            char a = s.charAt(i);
-        int[] map1 = new int[256];
-        int[] map2 = new int[256];
-class Solution {
-    public boolean isIsomorphic(String s, String t) {
+        }
+        return true;
+    }
+}
