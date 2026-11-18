@@ -14,6 +14,6 @@ Problem URL:
 https://leetcode.com/problems/combine-two-tables/
 
 Submission Date:
-2026-11-11 03:23:39
+2026-11-18 12:30:35
 
 Generated automatically by LeetSync.
