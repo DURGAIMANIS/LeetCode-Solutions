@@ -28,6 +28,6 @@ Problem URL:
 https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 
 Submission Date:
-2026-11-18 11:38:35
+2026-11-18 11:39:49
 
 Generated automatically by LeetSync.
