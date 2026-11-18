@@ -6,24 +6,37 @@ Difficulty: Easy
 
 Language: 1class Solution {
 2    public boolean isPalindrome(String s) {
-3
-4        s = s.toLowerCase();
-5        s = s.replaceAll("[^a-z0-9]", "");
-6
-7        String rev = "";
-8
-9        for (int i = s.length() - 1; i >= 0; i--) {
-10            rev = rev + s.charAt(i);
-11        }
+3        int left=0;
+4        int right=s.length()-1;
+5        // Time Complexity: O(n)
+6        // Space Complexity: O(1)
+7        while(left<right){
+8            if(!Character.isLetterOrDigit(s.charAt(left))){
+9                left++;
+10                continue;
+11            }
 12
-13        return s.equals(rev);
-14    }
-15}
+13            if(!Character.isLetterOrDigit(s.charAt(right))){
+14                right--;
+15                continue;
+16            }
+17            char ch1=Character.toLowerCase(s.charAt(left));
+18            char ch2=Character.toLowerCase(s.charAt(right));
+19            if(ch1!=ch2){
+20                return false;
+21            }
+22
+23            left++;
+24            right--;
+25        }
+26       return true;
+27    }
+28}
 
 Problem URL:
 https://leetcode.com/problems/valid-palindrome/
 
 Submission Date:
-2026-11-18 15:59:07
+2026-11-18 16:00:15
 
 Generated automatically by LeetSync.
