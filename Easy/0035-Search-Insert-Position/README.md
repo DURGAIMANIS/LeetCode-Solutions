@@ -13,20 +13,18 @@ Language: 1class Solution {
 7        for(int i=0;i<nums.length;i++){
 8            if(nums[i]==target){
 9                return i;
-10            }else if(nums[i]<target){
-11                index=i;
-12            }else if(nums[i]>target){
-13                return i;
-14            }
-15        }
-16        return nums.length;
-17    }
-18}
+10            }else if(nums[i]>target){
+11                return i;
+12            }
+13        }
+14        return nums.length;
+15    }
+16}
 
 Problem URL:
 https://leetcode.com/problems/search-insert-position/
 
 Submission Date:
-2026-11-18 10:26:09
+2026-11-18 10:28:17
 
 Generated automatically by LeetSync.
