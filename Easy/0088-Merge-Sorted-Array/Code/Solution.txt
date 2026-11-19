@@ -1,0 +1,16 @@
+            temp[m + i] = nums2[i];
+        }
+
+        // Sort the combined array
+        Arrays.sort(temp);
+
+        // Copy back to nums1
+        for (int i = 0; i < m + n; i++) {
+            nums1[i] = temp[i];
+        }
+    }
+
+        // Copy nums2 elements
+        for (int i = 0; i < n; i++) {
+            temp[i] = nums1[i];
+        }
