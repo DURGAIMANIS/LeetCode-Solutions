@@ -1,0 +1,16 @@
+                }
+
+                sum = sum - nums[left];
+
+                if (length < min) {
+                    min = length;
+            while (sum >= target) {
+
+                int length = right - left + 1;
+            sum = sum + nums[right];
+
+
+        for (int right = 0; right < nums.length; right++) {
+
+        int sum = 0;
+        int min = Integer.MAX_VALUE;
