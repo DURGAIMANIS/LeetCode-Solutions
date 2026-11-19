@@ -1,0 +1,16 @@
+                return true;
+            }
+
+            set.add(temp);
+
+            temp = temp.next;
+        }
+
+        while (temp != null) {
+
+            if (set.contains(temp)) {
+        ListNode temp = head;
+
+
+        HashSet<ListNode> set = new HashSet<>();
+
