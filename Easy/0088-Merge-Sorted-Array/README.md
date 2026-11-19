@@ -18,7 +18,7 @@ Language: 1class Solution {
 12                nums1[k]=nums1[i];
 13                k--;
 14                i--;
-15            }
+15            }//no nums1[i]>nums2[j], because if it is greater, then they already in nums1.
 16        }
 17        //no need to consider nums1
 18        while(j>=0){
@@ -34,6 +34,6 @@ Problem URL:
 https://leetcode.com/problems/merge-sorted-array/
 
 Submission Date:
-2026-11-19 06:14:02
+2026-11-19 06:15:18
 
 Generated automatically by LeetSync.
