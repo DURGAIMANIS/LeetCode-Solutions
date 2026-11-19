@@ -7,24 +7,60 @@ Difficulty: Medium
 Language: 1class Solution {
 2    public int minimizeSum(int[] nums) {
 3        int n=nums.length;
-4        if(nums.length<=3){
+4        if(n<=3){
 5            return 0;
 6        }
 7
-8        Arrays.sort(nums);
-9        int a=nums[n-1]-nums[2];
-10        int b=nums[n-3]-nums[0];
-11        int c=nums[n-2]-nums[1];
-12
-13        int min=Math.min(a,Math.min(b,c));
-14        return min;
-15    }
-16}
+8        //for find 3 min values
+9        int s1=Integer.MAX_VALUE;
+10        int s2=Integer.MAX_VALUE;
+11        int s3=Integer.MAX_VALUE;
+12        
+13        //for find 3 max values
+14        int l1=Integer.MIN_VALUE;
+15        int l2=Integer.MIN_VALUE;
+16        int l3=Integer.MIN_VALUE;
+17
+18        for(int x:nums){
+19            //find small
+20            if(x<s1){
+21                s3=s2;
+22                s2=s1;
+23                s1=x;
+24            }else if(x<s2){
+25                s3=s2;
+26                s2=x;
+27            }else if(x<s3){
+28                s3=x;
+29            }
+30
+31            //find large
+32            if(x>l1){
+33                l3=l2;
+34                l2=l1;
+35                l1=x;
+36            }else if(x>l2){
+37                l3=l2;
+38                l2=x;
+39            }else if(x>l3){
+40                l3=x;
+41            }
+42        }
+43
+44        int diff1=l1-s3;
+45        int diff2=l2-s2;
+46        int diff3=l3-s1;
+47
+48        int min=Math.min(diff1,Math.min(diff2,diff3));
+49        return min;
+50
+51    }
+52}
 
 Problem URL:
 https://leetcode.com/problems/minimum-score-by-changing-two-elements/
 
 Submission Date:
-2026-11-19 04:02:11
+2026-11-19 04:09:49
 
 Generated automatically by LeetSync.
