@@ -16,25 +16,22 @@ Language: 1/**
 10 */
 11class Solution {
 12    public ListNode reverseList(ListNode head) {
-13        ListNode prev=null;
+13        ListNode newlist=null;
 14        ListNode temp=head;
-15        
-16        while(temp!=null){
-17            ListNode next=temp.next;
-18
-19            temp.next=prev;
-20            prev=temp;
-21
-22            temp=next;
-23        }
-24        return prev;
-25    }
-26}
+15        while(temp!=null){
+16            ListNode nextlist=temp.next;
+17            temp.next=newlist;
+18            newlist=temp;
+19            temp=nextlist;
+20        }
+21        return newlist;
+22    }
+23}
 
 Problem URL:
 https://leetcode.com/problems/reverse-linked-list/
 
 Submission Date:
-2026-09-22 16:18:06
+2026-11-19 12:08:35
 
 Generated automatically by LeetSync.
