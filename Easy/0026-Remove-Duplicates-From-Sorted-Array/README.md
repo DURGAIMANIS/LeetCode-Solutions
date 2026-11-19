@@ -22,6 +22,6 @@ Problem URL:
 https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
 Submission Date:
-2026-11-19 12:52:56
+2026-11-19 12:56:02
 
 Generated automatically by LeetSync.
