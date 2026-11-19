@@ -61,6 +61,6 @@ Problem URL:
 https://leetcode.com/problems/minimum-score-by-changing-two-elements/
 
 Submission Date:
-2026-11-19 04:15:57
+2026-11-19 04:20:55
 
 Generated automatically by LeetSync.
