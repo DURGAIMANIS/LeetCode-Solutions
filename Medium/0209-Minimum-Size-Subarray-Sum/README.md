@@ -40,6 +40,6 @@ Problem URL:
 https://leetcode.com/problems/minimum-size-subarray-sum/
 
 Submission Date:
-2026-11-19 13:01:13
+2026-11-19 13:02:26
 
 Generated automatically by LeetSync.
