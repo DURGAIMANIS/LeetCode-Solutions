@@ -1,15 +1,16 @@
-        }
+            }else if(x<s3){
+                s3=x;
+            }
 
-        Arrays.sort(nums);
-        int a=nums[n-1]-nums[2];
-        int b=nums[n-3]-nums[0];
-        int c=nums[n-2]-nums[1];
-
-        int min=Math.min(a,Math.min(b,c));
-        return min;
-    }
-        int n=nums.length;
-        if(nums.length<=3){
-            return 0;
-class Solution {
-    public int minimizeSum(int[] nums) {
+            //find large
+            if(x>l1){
+                l3=l2;
+                l2=l1;
+            }else if(x<s2){
+                s3=s2;
+                s2=x;
+                s2=s1;
+                s1=x;
+            //find small
+            if(x<s1){
+                s3=s2;
