@@ -1,16 +1,14 @@
-        mid = (size / 2) + 1;
-        // Find middle position
-        }
-        int mid;
-            size++;
-            temp = temp.next;
-        temp = head;
-        // Move to middle node
-        // Find the size
-        while (temp != null) {
-        int size = 0;
-        ListNode temp = head;
 class Solution {
     public ListNode middleNode(ListNode head) {
-        int count = 1;
-        while (count < mid) {
+        ListNode slow=head;
+ * }
+ */
+        ListNode fast=head;
+
+        while(fast!=null&&fast.next!=null){
+            slow=slow.next;
+        }
+            fast=fast.next.next;
+        return slow;
+    }
+}
