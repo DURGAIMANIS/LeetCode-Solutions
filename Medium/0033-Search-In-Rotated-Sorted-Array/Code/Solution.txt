@@ -1,9 +1,6 @@
             else if(nums[mid]<=nums[high]){
                 if(nums[mid]<target&&target<=nums[high]){
                     low=mid+1;
-                }else{
-                    high=mid-1;
-                }
                     low=mid+1;
                 }
             }
@@ -12,5 +9,8 @@
             }
             if(nums[low] <= nums[mid]){
                 if(nums[low]<=target&&target<nums[mid]){
-            if(target==nums[mid]){
-                return mid;
+                }else{
+                    high=mid-1;
+                }
+            }
+        }
