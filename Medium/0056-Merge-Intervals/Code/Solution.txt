@@ -1,16 +1,15 @@
-            int nextStart=intervals[i][0];
-            int nextEnd=intervals[i][1];
-
-
-            if(currentEnd>=nextStart){
-                currentEnd=Math.max(currentEnd,nextEnd);
-            }
-            else{
-                result[resultIndex][0]=currentStart;
-                result[resultIndex][1]=currentEnd;
 
                 resultIndex++;
 
                 currentStart=nextStart;
                 currentEnd=nextEnd;
             }
+        }
+
+        result[resultIndex][0]=currentStart;//last set
+        result[resultIndex][1]=currentEnd;
+
+        resultIndex++;
+        return Arrays.copyOf(result,resultIndex);//removes null entries
+    }
+}
