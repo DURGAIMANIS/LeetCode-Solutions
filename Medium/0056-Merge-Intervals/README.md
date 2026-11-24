@@ -20,7 +20,7 @@ Language: 1class Solution {
 14            int nextStart=intervals[i][0];
 15            int nextEnd=intervals[i][1];
 16
-17            if(nextStart<=currentEnd){
+17            if(currentEnd>=nextStart){
 18                currentEnd=Math.max(currentEnd,nextEnd);
 19            }
 20            else{
@@ -38,7 +38,7 @@ Language: 1class Solution {
 32        result[resultIndex][1]=currentEnd;
 33
 34        resultIndex++;
-35        return Arrays.copyOf(result,resultIndex);
+35        return Arrays.copyOf(result,resultIndex);//removes null entries
 36    }
 37}
 
@@ -46,6 +46,6 @@ Problem URL:
 https://leetcode.com/problems/merge-intervals/
 
 Submission Date:
-2026-09-18 11:30:20
+2026-11-24 12:35:15
 
 Generated automatically by LeetSync.
