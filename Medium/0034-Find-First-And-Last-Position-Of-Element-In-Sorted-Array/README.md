@@ -21,6 +21,6 @@ Problem URL:
 https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 
 Submission Date:
-2026-11-24 12:44:07
+2026-11-24 12:46:00
 
 Generated automatically by LeetSync.
