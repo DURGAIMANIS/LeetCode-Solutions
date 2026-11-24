@@ -1,11 +1,6 @@
             int nextStart=intervals[i][0];
             int nextEnd=intervals[i][1];
-        for(int i=1;i<intervals.length;i++){
 
-        int currentEnd=intervals[0][1];
-
-
-        int currentStart=intervals[0][0];
 
             if(currentEnd>=nextStart){
                 currentEnd=Math.max(currentEnd,nextEnd);
@@ -14,3 +9,8 @@
                 result[resultIndex][0]=currentStart;
                 result[resultIndex][1]=currentEnd;
 
+                resultIndex++;
+
+                currentStart=nextStart;
+                currentEnd=nextEnd;
+            }
